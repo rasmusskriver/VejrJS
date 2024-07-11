@@ -10,12 +10,13 @@
 </head>
 
 <body>
-	<h1> Vejrudsigt for idag </h1>
-	<img id="sunny" src="Billeder/Solskin2.jpg" alt="Sunny weather" style="display:none;">
-	<img id="cloudy" src="Billeder/Overskyet2.jpg" alt="Cloudy weather" style="display:none;">
-	<img id="rainy" src="Billeder/Regnvejr1.jpg" alt="Rainy weather" style="display:none;">
-	<img id="thunder" src="Billeder/Tordenvejr4.jpg" alt="Thunder weather" style="display:none;">
-
+    <div class="container">
+        <h1>Vejrudsigt for idag</h1>
+        <img id="sunny" src="Billeder/Solskin2.jpg" alt="Sunny weather" class="responsive-image" style="display:none;">
+        <img id="cloudy" src="Billeder/Overskyet2.jpg" alt="Cloudy weather" class="responsive-image" style="display:none;">
+        <img id="rainy" src="Billeder/Regnvejr1.jpg" alt="Rainy weather" class="responsive-image" style="display:none;">
+        <img id="thunder" src="Billeder/Tordenvejr4.jpg" alt="Thunder weather" class="responsive-image" style="display:none;">
+    </div>
 
 <div class="vejrudsigt-container">
     <button class="vejrudsigt-knap" onclick="toggleVejrudsigt()">Giv mig også noget data</button>
@@ -23,21 +24,6 @@
         <!-- vejr output bliver vist her -->
     </div>
 </div>
-
-		<!-- til test
-
-<div>
-<br><br><br><br><br>
-    <label for="vejr">Vælg vejrudsigt:</label>
-    <select id="vejr" onchange="visVejr(this.value)">
-        <option value="0">Vælg vejrudsigt</option>
-        <option value="solrigt">Solrigt</option>
-        <option value="regnvejr">Regnvejr</option>
-        <option value="overskyet">Overskyet</option>
-        <option value="tordenvejr">Tordenvejr</option>
-    </select>
-</div>
-		<!-- til test -->
 
 	<script src="script.js"></script>
 </body>
