@@ -10,20 +10,28 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Vejrudsigt for idag</h1>
-        <img id="sunny" src="Billeder/Solskin2.jpg" alt="Sunny weather" class="responsive-image" style="display:none;">
-        <img id="cloudy" src="Billeder/Overskyet2.jpg" alt="Cloudy weather" class="responsive-image" style="display:none;">
-        <img id="rainy" src="Billeder/Regnvejr1.jpg" alt="Rainy weather" class="responsive-image" style="display:none;">
-        <img id="thunder" src="Billeder/Tordenvejr4.jpg" alt="Thunder weather" class="responsive-image" style="display:none;">
-    </div>
+	<div class="container">
+		<h1>Vejrudsigt for Aarhus idag</h1>
+		<img id="sunny" src="Billeder/Solskin2.jpg" alt="Sunny weather" class="responsive-image"
+			style="display:none;">
+		<img id="cloudy" src="Billeder/Overskyet2.jpg" alt="Cloudy weather" class="responsive-image"
+			style="display:none;">
+		<img id="rainy" src="Billeder/Regnvejr1.jpg" alt="Rainy weather" class="responsive-image"
+			style="display:none;">
+		<img id="thunder" src="Billeder/Tordenvejr4.jpg" alt="Thunder weather" class="responsive-image"
+			style="display:none;">
+	</div>
 
-<div class="vejrudsigt-container">
-    <button class="vejrudsigt-knap" onclick="toggleVejrudsigt()">Giv mig også noget data</button>
-    <div id="vejrudsigt" class="vejrudsigt-indhold">
-        <!-- vejr output bliver vist her -->
-    </div>
-</div>
+	<div id="average-container">
+		<!-- vejr output bliver vist her -->
+	</div>
+
+	<div class="vejrudsigt-container">
+		<button class="vejrudsigt-knap" onclick="toggleVejrudsigt()">Giv mig mere data</button>
+		<div id="vejrudsigt" class="vejrudsigt-indhold">
+			<!-- vejr output bliver vist her -->
+		</div>
+	</div>
 
 	<script src="script.js"></script>
 </body>
