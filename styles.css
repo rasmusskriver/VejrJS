@@ -1,22 +1,22 @@
 body {
 	background-color: black;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            text-align: center;
-        }
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	text-align: center;
+}
 h1 {
 	color: white; /* Valgfrit: gør teksten hvid, så den er læsbar på sort baggrund */
-	    font-size: 2em;
-    margin: 20px 0;
+	font-size: 2em;
+	margin: 20px 0;
 }
 .vejrudsigt-container {
 	margin: 20px;
@@ -36,27 +36,27 @@ h1 {
 	background-color: #f9f9f9;
 }
 .responsive-image {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
+	width: 100%;
+	height: auto;
+	max-width: 400px;
 }
 
 
 
 .vejrudsigt-knap {
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 1em;
+	cursor: pointer;
+	border: none;
+	background-color: #007BFF;
+	color: white;
+	border-radius: 5px;
 }
 
 
 
 @media (min-width: 768px) {
-    .responsive-image {
-        max-width: 600px;
-    }
+	.responsive-image {
+		max-width: 600px;
+	}
 }
