@@ -7,23 +7,20 @@ body {
 }
 .container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
-	height: 100vh;
 	text-align: center;
 }
 h1 {
-	color: white; /* Valgfrit: gør teksten hvid, så den er læsbar på sort baggrund */
+	color: white;
 	font-size: 2em;
 	margin: 20px 0;
 }
+
 .vejrudsigt-container {
-	margin: 20px;
+	margin-top: 0px;
 }
-
-
-
 .vejrudsigt-knap:hover {
 	background-color: #45a049;
 }
@@ -35,28 +32,27 @@ h1 {
 	border: 1px solid #ddd;
 	background-color: #f9f9f9;
 }
+.vejrudsigt-knap {
+	padding: 10px 20px;
+	font-size: 1em;
+	cursor: pointer;
+	margin-top: 20px;
+	border: none;
+	background-color: #007BFF;
+	color: white;
+	border-radius: 5px;
+}
+@media (min-width: 768px) {
+	.responsive-image {
+		max-width: 600px;
+	}
+}
 .responsive-image {
 	width: 100%;
 	height: auto;
 	max-width: 400px;
 }
 
-
-
-.vejrudsigt-knap {
-	padding: 10px 20px;
-	font-size: 1em;
-	cursor: pointer;
-	border: none;
-	background-color: #007BFF;
-	color: white;
-	border-radius: 5px;
-}
-
-
-
-@media (min-width: 768px) {
-	.responsive-image {
-		max-width: 600px;
-	}
+#average-container {
+color: white;
 }
