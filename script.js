@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=56.1656&longitude=10.2123&hourly=temperature_2m,relative_humidity_2m,precipitation,rain,snowfall,weather_code,cloud_cover,wind_speed_10m,wind_direction_10m,wind_gusts_10m&timezone=Europe%2FBerlin&forecast_days=1&models=metno_seamless';
 	const testJson = new Request("test1.json");
 
-	fetch(testJson)
+	fetch(apiUrl)
 		.then(response => {
 			if (!response.ok) {
 				throw new Error('Netværksresponsen var ikke OK');
