@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
 				document.getElementById('cloudy90100').style.display = 'block';
 			} else if (averageCloudCover >= 80) {
 				document.getElementById('cloudy8090').style.display = 'block';
+			} else if (averageCloudCover >= 70) {
+				document.getElementById('cloudy7080').style.display = 'block';
 			} else if (averageCloudCover >= 60) {
 				document.getElementById('cloudy6070').style.display = 'block';
 			} else if (averageCloudCover >= 40) {
